@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import HorizontalCollectionView
 
 class ViewController: UIViewController {
     @IBOutlet weak var collectionView: HorizontalCollectionView!

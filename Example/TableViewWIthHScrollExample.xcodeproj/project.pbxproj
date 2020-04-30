@@ -3,16 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA0F4556245AAA3A004B9055 /* PHorizontalCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F4551245AAA39004B9055 /* PHorizontalCollectionDataSource.swift */; };
-		FA0F4557245AAA3A004B9055 /* HorizontalCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0F4552245AAA39004B9055 /* HorizontalCollectionCell.xib */; };
-		FA0F4558245AAA3A004B9055 /* HorizontalCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F4553245AAA39004B9055 /* HorizontalCollectionCell.swift */; };
+		AE7D2DDB1D9DDAC5B1156562 /* Pods_TableViewWIthHScrollExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8DF3FC93273DA9365731B1 /* Pods_TableViewWIthHScrollExample.framework */; };
 		FA0F4559245AAA3A004B9055 /* ViewsSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F4554245AAA39004B9055 /* ViewsSource.swift */; };
-		FA0F455A245AAA3A004B9055 /* HorizontalCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F4555245AAA39004B9055 /* HorizontalCollectionView.swift */; };
-		FA0F455C245AAB23004B9055 /* PHorizontalCollectionEmbededView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F455B245AAB22004B9055 /* PHorizontalCollectionEmbededView.swift */; };
 		FA0F455E245AAEEB004B9055 /* SampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F455D245AAEEB004B9055 /* SampleView.swift */; };
 		FA0F4560245AAEF9004B9055 /* SampleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0F455F245AAEF9004B9055 /* SampleView.xib */; };
 		FAFFAB4524458F88002A64BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFFAB4424458F88002A64BA /* AppDelegate.swift */; };
@@ -23,12 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FA0F4551245AAA39004B9055 /* PHorizontalCollectionDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PHorizontalCollectionDataSource.swift; sourceTree = "<group>"; };
-		FA0F4552245AAA39004B9055 /* HorizontalCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HorizontalCollectionCell.xib; sourceTree = "<group>"; };
-		FA0F4553245AAA39004B9055 /* HorizontalCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalCollectionCell.swift; sourceTree = "<group>"; };
+		239AA89370F4096BAF690A9C /* Pods-TableViewWIthHScrollExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableViewWIthHScrollExample.release.xcconfig"; path = "Target Support Files/Pods-TableViewWIthHScrollExample/Pods-TableViewWIthHScrollExample.release.xcconfig"; sourceTree = "<group>"; };
+		2E5465ACBFA26FDEC94D6004 /* Pods-TableViewWIthHScrollExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableViewWIthHScrollExample.debug.xcconfig"; path = "Target Support Files/Pods-TableViewWIthHScrollExample/Pods-TableViewWIthHScrollExample.debug.xcconfig"; sourceTree = "<group>"; };
+		DB8DF3FC93273DA9365731B1 /* Pods_TableViewWIthHScrollExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TableViewWIthHScrollExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA0F4554245AAA39004B9055 /* ViewsSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewsSource.swift; sourceTree = "<group>"; };
-		FA0F4555245AAA39004B9055 /* HorizontalCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalCollectionView.swift; sourceTree = "<group>"; };
-		FA0F455B245AAB22004B9055 /* PHorizontalCollectionEmbededView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHorizontalCollectionEmbededView.swift; sourceTree = "<group>"; };
 		FA0F455D245AAEEB004B9055 /* SampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleView.swift; sourceTree = "<group>"; };
 		FA0F455F245AAEF9004B9055 /* SampleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleView.xib; sourceTree = "<group>"; };
 		FAFFAB4124458F88002A64BA /* TableViewWIthHScrollExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewWIthHScrollExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,30 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE7D2DDB1D9DDAC5B1156562 /* Pods_TableViewWIthHScrollExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FA0F4550245AAA39004B9055 /* HorizontalCollectionView */ = {
+		A98E50C022241376B46BF012 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FA0F455B245AAB22004B9055 /* PHorizontalCollectionEmbededView.swift */,
-				FA0F4551245AAA39004B9055 /* PHorizontalCollectionDataSource.swift */,
-				FA0F4552245AAA39004B9055 /* HorizontalCollectionCell.xib */,
-				FA0F4553245AAA39004B9055 /* HorizontalCollectionCell.swift */,
-				FA0F4555245AAA39004B9055 /* HorizontalCollectionView.swift */,
+				2E5465ACBFA26FDEC94D6004 /* Pods-TableViewWIthHScrollExample.debug.xcconfig */,
+				239AA89370F4096BAF690A9C /* Pods-TableViewWIthHScrollExample.release.xcconfig */,
 			);
-			path = HorizontalCollectionView;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B663DEC07C4077E6EC04156B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB8DF3FC93273DA9365731B1 /* Pods_TableViewWIthHScrollExample.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		FAFFAB3824458F88002A64BA = {
 			isa = PBXGroup;
 			children = (
-				FA0F4550245AAA39004B9055 /* HorizontalCollectionView */,
 				FAFFAB4324458F88002A64BA /* TableViewWIthHScrollExample */,
 				FAFFAB4224458F88002A64BA /* Products */,
+				A98E50C022241376B46BF012 /* Pods */,
+				B663DEC07C4077E6EC04156B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAFFAB5524458F8B002A64BA /* Build configuration list for PBXNativeTarget "TableViewWIthHScrollExample" */;
 			buildPhases = (
+				8D9D1399D822D2D048506ECD /* [CP] Check Pods Manifest.lock */,
 				FAFFAB3D24458F88002A64BA /* Sources */,
 				FAFFAB3E24458F88002A64BA /* Frameworks */,
 				FAFFAB3F24458F88002A64BA /* Resources */,
+				10E87BFC7D53475C64F02FE0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -158,11 +161,52 @@
 				FA0F4560245AAEF9004B9055 /* SampleView.xib in Resources */,
 				FAFFAB4E24458F8B002A64BA /* Assets.xcassets in Resources */,
 				FAFFAB4C24458F88002A64BA /* Main.storyboard in Resources */,
-				FA0F4557245AAA3A004B9055 /* HorizontalCollectionCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10E87BFC7D53475C64F02FE0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TableViewWIthHScrollExample/Pods-TableViewWIthHScrollExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TableViewWIthHScrollExample/Pods-TableViewWIthHScrollExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TableViewWIthHScrollExample/Pods-TableViewWIthHScrollExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D9D1399D822D2D048506ECD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TableViewWIthHScrollExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FAFFAB3D24458F88002A64BA /* Sources */ = {
@@ -171,11 +215,7 @@
 			files = (
 				FAFFAB4924458F88002A64BA /* ViewController.swift in Sources */,
 				FAFFAB4524458F88002A64BA /* AppDelegate.swift in Sources */,
-				FA0F4558245AAA3A004B9055 /* HorizontalCollectionCell.swift in Sources */,
-				FA0F455A245AAA3A004B9055 /* HorizontalCollectionView.swift in Sources */,
 				FA0F455E245AAEEB004B9055 /* SampleView.swift in Sources */,
-				FA0F455C245AAB23004B9055 /* PHorizontalCollectionEmbededView.swift in Sources */,
-				FA0F4556245AAA3A004B9055 /* PHorizontalCollectionDataSource.swift in Sources */,
 				FA0F4559245AAA3A004B9055 /* ViewsSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,6 +358,7 @@
 		};
 		FAFFAB5624458F8B002A64BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E5465ACBFA26FDEC94D6004 /* Pods-TableViewWIthHScrollExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -336,6 +377,7 @@
 		};
 		FAFFAB5724458F8B002A64BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 239AA89370F4096BAF690A9C /* Pods-TableViewWIthHScrollExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
