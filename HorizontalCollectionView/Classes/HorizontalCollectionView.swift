@@ -17,7 +17,7 @@ public class HorizontalCollectionView: UIView, UICollectionViewDelegate, UIColle
     private var indexOfCellBeforeDragging = 0
 
     /// Источник view для отображния в коллекции
-    var viewsSource: PHorizontalCollectionViewsSource!
+    public var viewsSource: PHorizontalCollectionViewsSource!
 
     private var cellSize: CGSize {
         get { return flowLayout.itemSize }
@@ -31,7 +31,7 @@ public class HorizontalCollectionView: UIView, UICollectionViewDelegate, UIColle
     }
 
     /// Отступы от границ
-    var inset: UIEdgeInsets {
+    public var inset: UIEdgeInsets {
         get { return flowLayout.sectionInset }
         set { flowLayout.sectionInset = newValue }
     }
