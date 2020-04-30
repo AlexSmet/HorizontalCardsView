@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AE7D2DDB1D9DDAC5B1156562 /* Pods_TableViewWIthHScrollExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB8DF3FC93273DA9365731B1 /* Pods_TableViewWIthHScrollExample.framework */; };
+		5AC772C4DBBF17B60F4B9479 /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9B959AAABF630CD442D61C5 /* Pods_Example.framework */; };
 		FA0F4559245AAA3A004B9055 /* ViewsSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F4554245AAA39004B9055 /* ViewsSource.swift */; };
 		FA0F455E245AAEEB004B9055 /* SampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F455D245AAEEB004B9055 /* SampleView.swift */; };
 		FA0F4560245AAEF9004B9055 /* SampleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0F455F245AAEF9004B9055 /* SampleView.xib */; };
@@ -21,11 +21,13 @@
 /* Begin PBXFileReference section */
 		239AA89370F4096BAF690A9C /* Pods-TableViewWIthHScrollExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableViewWIthHScrollExample.release.xcconfig"; path = "Target Support Files/Pods-TableViewWIthHScrollExample/Pods-TableViewWIthHScrollExample.release.xcconfig"; sourceTree = "<group>"; };
 		2E5465ACBFA26FDEC94D6004 /* Pods-TableViewWIthHScrollExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableViewWIthHScrollExample.debug.xcconfig"; path = "Target Support Files/Pods-TableViewWIthHScrollExample/Pods-TableViewWIthHScrollExample.debug.xcconfig"; sourceTree = "<group>"; };
-		DB8DF3FC93273DA9365731B1 /* Pods_TableViewWIthHScrollExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TableViewWIthHScrollExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51C2C2D25501A2FA6BEF04AD /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
+		B60997CD377A433DA35406E4 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		F9B959AAABF630CD442D61C5 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA0F4554245AAA39004B9055 /* ViewsSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewsSource.swift; sourceTree = "<group>"; };
 		FA0F455D245AAEEB004B9055 /* SampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleView.swift; sourceTree = "<group>"; };
 		FA0F455F245AAEF9004B9055 /* SampleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleView.xib; sourceTree = "<group>"; };
-		FAFFAB4124458F88002A64BA /* TableViewWIthHScrollExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewWIthHScrollExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAFFAB4124458F88002A64BA /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAFFAB4424458F88002A64BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAFFAB4824458F88002A64BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FAFFAB4B24458F88002A64BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -39,7 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE7D2DDB1D9DDAC5B1156562 /* Pods_TableViewWIthHScrollExample.framework in Frameworks */,
+				5AC772C4DBBF17B60F4B9479 /* Pods_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +53,8 @@
 			children = (
 				2E5465ACBFA26FDEC94D6004 /* Pods-TableViewWIthHScrollExample.debug.xcconfig */,
 				239AA89370F4096BAF690A9C /* Pods-TableViewWIthHScrollExample.release.xcconfig */,
+				B60997CD377A433DA35406E4 /* Pods-Example.debug.xcconfig */,
+				51C2C2D25501A2FA6BEF04AD /* Pods-Example.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -58,7 +62,7 @@
 		B663DEC07C4077E6EC04156B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DB8DF3FC93273DA9365731B1 /* Pods_TableViewWIthHScrollExample.framework */,
+				F9B959AAABF630CD442D61C5 /* Pods_Example.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -66,7 +70,7 @@
 		FAFFAB3824458F88002A64BA = {
 			isa = PBXGroup;
 			children = (
-				FAFFAB4324458F88002A64BA /* TableViewWIthHScrollExample */,
+				FAFFAB4324458F88002A64BA /* Example */,
 				FAFFAB4224458F88002A64BA /* Products */,
 				A98E50C022241376B46BF012 /* Pods */,
 				B663DEC07C4077E6EC04156B /* Frameworks */,
@@ -76,12 +80,12 @@
 		FAFFAB4224458F88002A64BA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FAFFAB4124458F88002A64BA /* TableViewWIthHScrollExample.app */,
+				FAFFAB4124458F88002A64BA /* Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FAFFAB4324458F88002A64BA /* TableViewWIthHScrollExample */ = {
+		FAFFAB4324458F88002A64BA /* Example */ = {
 			isa = PBXGroup;
 			children = (
 				FA0F4554245AAA39004B9055 /* ViewsSource.swift */,
@@ -94,15 +98,15 @@
 				FAFFAB4F24458F8B002A64BA /* LaunchScreen.storyboard */,
 				FAFFAB5224458F8B002A64BA /* Info.plist */,
 			);
-			path = TableViewWIthHScrollExample;
+			path = Example;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FAFFAB4024458F88002A64BA /* TableViewWIthHScrollExample */ = {
+		FAFFAB4024458F88002A64BA /* Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FAFFAB5524458F8B002A64BA /* Build configuration list for PBXNativeTarget "TableViewWIthHScrollExample" */;
+			buildConfigurationList = FAFFAB5524458F8B002A64BA /* Build configuration list for PBXNativeTarget "Example" */;
 			buildPhases = (
 				8D9D1399D822D2D048506ECD /* [CP] Check Pods Manifest.lock */,
 				FAFFAB3D24458F88002A64BA /* Sources */,
@@ -114,9 +118,9 @@
 			);
 			dependencies = (
 			);
-			name = TableViewWIthHScrollExample;
+			name = Example;
 			productName = TableViewWIthHScrollExample;
-			productReference = FAFFAB4124458F88002A64BA /* TableViewWIthHScrollExample.app */;
+			productReference = FAFFAB4124458F88002A64BA /* Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -134,7 +138,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FAFFAB3C24458F88002A64BA /* Build configuration list for PBXProject "TableViewWIthHScrollExample" */;
+			buildConfigurationList = FAFFAB3C24458F88002A64BA /* Build configuration list for PBXProject "Example" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -147,7 +151,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FAFFAB4024458F88002A64BA /* TableViewWIthHScrollExample */,
+				FAFFAB4024458F88002A64BA /* Example */,
 			);
 		};
 /* End PBXProject section */
@@ -173,15 +177,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TableViewWIthHScrollExample/Pods-TableViewWIthHScrollExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TableViewWIthHScrollExample/Pods-TableViewWIthHScrollExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TableViewWIthHScrollExample/Pods-TableViewWIthHScrollExample-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8D9D1399D822D2D048506ECD /* [CP] Check Pods Manifest.lock */ = {
@@ -199,7 +203,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TableViewWIthHScrollExample-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -358,17 +362,17 @@
 		};
 		FAFFAB5624458F8B002A64BA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E5465ACBFA26FDEC94D6004 /* Pods-TableViewWIthHScrollExample.debug.xcconfig */;
+			baseConfigurationReference = B60997CD377A433DA35406E4 /* Pods-Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TableViewWIthHScrollExample/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Example/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = asmsdev.TableViewWIthHScrollExample;
+				PRODUCT_BUNDLE_IDENTIFIER = some.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -377,17 +381,17 @@
 		};
 		FAFFAB5724458F8B002A64BA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 239AA89370F4096BAF690A9C /* Pods-TableViewWIthHScrollExample.release.xcconfig */;
+			baseConfigurationReference = 51C2C2D25501A2FA6BEF04AD /* Pods-Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TableViewWIthHScrollExample/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Example/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = asmsdev.TableViewWIthHScrollExample;
+				PRODUCT_BUNDLE_IDENTIFIER = some.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -397,7 +401,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FAFFAB3C24458F88002A64BA /* Build configuration list for PBXProject "TableViewWIthHScrollExample" */ = {
+		FAFFAB3C24458F88002A64BA /* Build configuration list for PBXProject "Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FAFFAB5324458F8B002A64BA /* Debug */,
@@ -406,7 +410,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FAFFAB5524458F8B002A64BA /* Build configuration list for PBXNativeTarget "TableViewWIthHScrollExample" */ = {
+		FAFFAB5524458F8B002A64BA /* Build configuration list for PBXNativeTarget "Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FAFFAB5624458F8B002A64BA /* Debug */,
