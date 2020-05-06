@@ -96,6 +96,10 @@ public class HorizontalCollectionView: UIView, UICollectionViewDelegate, UIColle
 
         return cell
     }
+
+    public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        viewsSource.onSelect(index: indexPath.row)
+    }
 }
 
 // MARK: - Центрирование на ячейке при скроллинге

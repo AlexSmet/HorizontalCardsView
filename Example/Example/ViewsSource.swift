@@ -24,4 +24,8 @@ class ViewsSource: NSObject, PHorizontalCollectionViewsSource {
 
         return view
     }
+
+    func onSelect(index: Int) {
+        print("A view with index \(index) was selected.")
+    }
 }

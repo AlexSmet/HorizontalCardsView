@@ -11,4 +11,5 @@ import UIKit
 public protocol PHorizontalCollectionViewsSource {
     var count: Int { get }
     func getView(index: Int) -> PHorizontalCollectionEmbededView
+    func onSelect(index: Int)
 }
