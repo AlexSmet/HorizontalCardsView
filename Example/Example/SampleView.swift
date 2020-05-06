@@ -9,7 +9,7 @@
 import UIKit
 import HorizontalCollectionView
 
-class SampleView: HorizontalCollectionItemView {
+class SampleView: HorizontalCardView {
 
     func configure(with anyColor: Any) {
         self.backgroundColor = (anyColor as! UIColor)

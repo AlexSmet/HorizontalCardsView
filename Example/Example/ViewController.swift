@@ -9,9 +9,9 @@
 import UIKit
 import HorizontalCollectionView
 
-class ViewController: UIViewController, HorizontalCollectionViewDelegate {
+class ViewController: UIViewController, HorizontalCardsDelegate {
 
-    @IBOutlet weak var collectionView: HorizontalCollectionView!
+    @IBOutlet weak var collectionView: HorizontalCardsScroller!
 
     let viewsSource = ViewsSource()
     
@@ -22,7 +22,7 @@ class ViewController: UIViewController, HorizontalCollectionViewDelegate {
         collectionView.inset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
     }
 
-    func horizontalCollectionView(_ collectionView: HorizontalCollectionView, didSelectItemAtIndex index: Int) {
+    func horizontalCardsScroller(_ collectionView: HorizontalCardsScroller, didSelectItemAtIndex index: Int) {
         print("A view with index \(index) was selected.")
     }
 }

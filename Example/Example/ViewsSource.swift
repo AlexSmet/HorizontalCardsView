@@ -9,15 +9,15 @@
 import UIKit
 import HorizontalCollectionView
 
-class ViewsSource: NSObject, HorizontalCollectionViewsSource {
+class ViewsSource: NSObject, HorizontalCardsSource {
 
     let backgroundColors: [UIColor] = [.red, .blue, .green, .cyan, .magenta]
 
-    func horizontalCollectionViewNumberOfItems(_ collectionView: HorizontalCollectionView) -> Int {
+    func horizontalCardsScrollerNumberOfItems(_ collectionView: HorizontalCardsScroller) -> Int {
         return backgroundColors.count
     }
 
-    func horizontalCollectionView(_ collectionView: HorizontalCollectionView, viewForIndex index: Int) -> HorizontalCollectionItemView {
+    func horizontalCardsScroller(_ collectionView: HorizontalCardsScroller, viewForIndex index: Int) -> HorizontalCardView {
                 let bundle = Bundle(for: SampleView.self)
         let view = bundle.loadNibNamed("SampleView", owner: self, options: nil)?.first as! SampleView
         view.configure(with: backgroundColors[index])

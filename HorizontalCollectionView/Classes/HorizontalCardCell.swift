@@ -8,11 +8,11 @@
 
 import UIKit
 
-class HorizontalCollectionCell: UICollectionViewCell {
+class HorizontalCardCell: UICollectionViewCell {
 
     private (set) weak var embededView: UIView?
 
-    func embedView(_ view: HorizontalCollectionItemView) {
+    func embedView(_ view: HorizontalCardView) {
         contentView.subviews.forEach { $0.removeFromSuperview() }
         contentView.addSubview(view)
         
@@ -26,6 +26,6 @@ class HorizontalCollectionCell: UICollectionViewCell {
     }
 
     override func prepareForReuse() {
-        (embededView as! HorizontalCollectionItemView).prepareForReuse()
+        (embededView as! HorizontalCardView).prepareForReuse()
     }
 }

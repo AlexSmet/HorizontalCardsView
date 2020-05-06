@@ -11,10 +11,10 @@
 		FA0F4559245AAA3A004B9055 /* ViewsSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F4554245AAA39004B9055 /* ViewsSource.swift */; };
 		FA0F455E245AAEEB004B9055 /* SampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F455D245AAEEB004B9055 /* SampleView.swift */; };
 		FA0F4560245AAEF9004B9055 /* SampleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0F455F245AAEF9004B9055 /* SampleView.xib */; };
-		FA41898B2462DF090086FC2B /* HorizontalCollectionItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4189862462DF090086FC2B /* HorizontalCollectionItemView.swift */; };
-		FA41898D2462DF090086FC2B /* HorizontalCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA4189882462DF090086FC2B /* HorizontalCollectionCell.xib */; };
-		FA41898E2462DF090086FC2B /* HorizontalCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4189892462DF090086FC2B /* HorizontalCollectionCell.swift */; };
-		FA41898F2462DF090086FC2B /* HorizontalCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41898A2462DF090086FC2B /* HorizontalCollectionView.swift */; };
+		FA41898B2462DF090086FC2B /* HorizontalCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4189862462DF090086FC2B /* HorizontalCardView.swift */; };
+		FA41898D2462DF090086FC2B /* HorizontalCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA4189882462DF090086FC2B /* HorizontalCardCell.xib */; };
+		FA41898E2462DF090086FC2B /* HorizontalCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4189892462DF090086FC2B /* HorizontalCardCell.swift */; };
+		FA41898F2462DF090086FC2B /* HorizontalCardsScroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41898A2462DF090086FC2B /* HorizontalCardsScroller.swift */; };
 		FAFFAB4524458F88002A64BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFFAB4424458F88002A64BA /* AppDelegate.swift */; };
 		FAFFAB4924458F88002A64BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFFAB4824458F88002A64BA /* ViewController.swift */; };
 		FAFFAB4C24458F88002A64BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFFAB4A24458F88002A64BA /* Main.storyboard */; };
@@ -31,10 +31,10 @@
 		FA0F4554245AAA39004B9055 /* ViewsSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewsSource.swift; sourceTree = "<group>"; };
 		FA0F455D245AAEEB004B9055 /* SampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleView.swift; sourceTree = "<group>"; };
 		FA0F455F245AAEF9004B9055 /* SampleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleView.xib; sourceTree = "<group>"; };
-		FA4189862462DF090086FC2B /* HorizontalCollectionItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalCollectionItemView.swift; sourceTree = "<group>"; };
-		FA4189882462DF090086FC2B /* HorizontalCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HorizontalCollectionCell.xib; sourceTree = "<group>"; };
-		FA4189892462DF090086FC2B /* HorizontalCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalCollectionCell.swift; sourceTree = "<group>"; };
-		FA41898A2462DF090086FC2B /* HorizontalCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalCollectionView.swift; sourceTree = "<group>"; };
+		FA4189862462DF090086FC2B /* HorizontalCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalCardView.swift; sourceTree = "<group>"; };
+		FA4189882462DF090086FC2B /* HorizontalCardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HorizontalCardCell.xib; sourceTree = "<group>"; };
+		FA4189892462DF090086FC2B /* HorizontalCardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalCardCell.swift; sourceTree = "<group>"; };
+		FA41898A2462DF090086FC2B /* HorizontalCardsScroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalCardsScroller.swift; sourceTree = "<group>"; };
 		FAFFAB4124458F88002A64BA /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAFFAB4424458F88002A64BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAFFAB4824458F88002A64BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,10 +78,10 @@
 		FA4189852462DF090086FC2B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				FA4189862462DF090086FC2B /* HorizontalCollectionItemView.swift */,
-				FA4189882462DF090086FC2B /* HorizontalCollectionCell.xib */,
-				FA4189892462DF090086FC2B /* HorizontalCollectionCell.swift */,
-				FA41898A2462DF090086FC2B /* HorizontalCollectionView.swift */,
+				FA4189862462DF090086FC2B /* HorizontalCardView.swift */,
+				FA4189882462DF090086FC2B /* HorizontalCardCell.xib */,
+				FA4189892462DF090086FC2B /* HorizontalCardCell.swift */,
+				FA41898A2462DF090086FC2B /* HorizontalCardsScroller.swift */,
 			);
 			name = Classes;
 			path = ../HorizontalCollectionView/Classes;
@@ -184,7 +184,7 @@
 				FAFFAB5124458F8B002A64BA /* LaunchScreen.storyboard in Resources */,
 				FA0F4560245AAEF9004B9055 /* SampleView.xib in Resources */,
 				FAFFAB4E24458F8B002A64BA /* Assets.xcassets in Resources */,
-				FA41898D2462DF090086FC2B /* HorizontalCollectionCell.xib in Resources */,
+				FA41898D2462DF090086FC2B /* HorizontalCardCell.xib in Resources */,
 				FAFFAB4C24458F88002A64BA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,10 +223,10 @@
 			files = (
 				FAFFAB4924458F88002A64BA /* ViewController.swift in Sources */,
 				FAFFAB4524458F88002A64BA /* AppDelegate.swift in Sources */,
-				FA41898F2462DF090086FC2B /* HorizontalCollectionView.swift in Sources */,
-				FA41898E2462DF090086FC2B /* HorizontalCollectionCell.swift in Sources */,
+				FA41898F2462DF090086FC2B /* HorizontalCardsScroller.swift in Sources */,
+				FA41898E2462DF090086FC2B /* HorizontalCardCell.swift in Sources */,
 				FA0F455E245AAEEB004B9055 /* SampleView.swift in Sources */,
-				FA41898B2462DF090086FC2B /* HorizontalCollectionItemView.swift in Sources */,
+				FA41898B2462DF090086FC2B /* HorizontalCardView.swift in Sources */,
 				FA0F4559245AAA3A004B9055 /* ViewsSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

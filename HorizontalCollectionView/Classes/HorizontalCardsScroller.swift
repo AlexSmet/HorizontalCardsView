@@ -8,31 +8,31 @@
 
 import UIKit
 
-public protocol HorizontalCollectionViewsSource {
-    func horizontalCollectionViewNumberOfItems(_ collectionView: HorizontalCollectionView) -> Int
-    func horizontalCollectionView(_ collectionView: HorizontalCollectionView, viewForIndex index: Int) -> HorizontalCollectionItemView
+public protocol HorizontalCardsSource {
+    func horizontalCardsScrollerNumberOfItems(_ horizontalCardsScroller: HorizontalCardsScroller) -> Int
+    func horizontalCardsScroller(_ horizontalCardsScroller: HorizontalCardsScroller, viewForIndex index: Int) -> HorizontalCardView
 }
 
-public protocol HorizontalCollectionViewDelegate {
-    func horizontalCollectionView(_ collectionView: HorizontalCollectionView, didSelectItemAtIndex index: Int)
+public protocol HorizontalCardsDelegate {
+    func horizontalCardsScroller(_ horizontalCardsScroller: HorizontalCardsScroller, didSelectItemAtIndex index: Int)
 }
 
-public class HorizontalCollectionView: UIView, UICollectionViewDelegate, UICollectionViewDataSource {
+public class HorizontalCardsScroller: UIView, UICollectionViewDelegate, UICollectionViewDataSource {
 
     private let flowLayout = UICollectionViewFlowLayout()
     private var collectionView: UICollectionView!
-    private let reuseIdentifier = "horizontalCollectionCell"
+    private let reuseIdentifier = "horizontalCardCell"
 
     private var indexOfCellBeforeDragging = 0
 
     /// Источник view для отображния в коллекции
-    public var viewsSource: HorizontalCollectionViewsSource!
+    public var viewsSource: HorizontalCardsSource!
 
     /// Делегат
-    public var delegate: HorizontalCollectionViewDelegate?
+    public var delegate: HorizontalCardsDelegate?
 
     private var viewsCount: Int {
-        return viewsSource.horizontalCollectionViewNumberOfItems(self)
+        return viewsSource.horizontalCardsScrollerNumberOfItems(self)
     }
 
     private var cellSize: CGSize {
@@ -71,7 +71,7 @@ public class HorizontalCollectionView: UIView, UICollectionViewDelegate, UIColle
         collectionView.backgroundColor = .clear
         collectionView.showsVerticalScrollIndicator = false
         collectionView.showsHorizontalScrollIndicator = false
-        collectionView.register(HorizontalCollectionCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        collectionView.register(HorizontalCardCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         addSubview(collectionView)
 
@@ -106,20 +106,20 @@ public class HorizontalCollectionView: UIView, UICollectionViewDelegate, UIColle
     }
 
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! HorizontalCollectionCell
-        let view = viewsSource.horizontalCollectionView(self, viewForIndex: indexPath.row)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! HorizontalCardCell
+        let view = viewsSource.horizontalCardsScroller(self, viewForIndex: indexPath.row)
         cell.embedView(view)
 
         return cell
     }
 
     public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        delegate?.horizontalCollectionView(self, didSelectItemAtIndex: indexPath.row)
+        delegate?.horizontalCardsScroller(self, didSelectItemAtIndex: indexPath.row)
     }
 }
 
 // MARK: - Центрирование на ячейке при скроллинге
-extension HorizontalCollectionView {
+extension HorizontalCardsScroller {
 
     public func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         indexOfCellBeforeDragging = getIndexOfMajorCell()
