@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import HorizontalCollectionView
+import HorizontalCardsScroller
 
 class ViewController: UIViewController, HorizontalCardsDelegate {
 
