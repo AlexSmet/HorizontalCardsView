@@ -9,23 +9,19 @@
 import UIKit
 import HorizontalCollectionView
 
-class ViewsSource: NSObject, PHorizontalCollectionViewsSource {
+class ViewsSource: NSObject, HorizontalCollectionViewsSource {
 
     let backgroundColors: [UIColor] = [.red, .blue, .green, .cyan, .magenta]
 
-    var count: Int {
+    func horizontalCollectionViewNumberOfItems(_ collectionView: HorizontalCollectionView) -> Int {
         return backgroundColors.count
     }
 
-    func getView(index: Int) -> PHorizontalCollectionEmbededView {
-        let bundle = Bundle(for: SampleView.self)
-        let view = bundle.loadNibNamed("SampleView", owner: self, options: nil)?.first as! PHorizontalCollectionEmbededView
+    func horizontalCollectionView(_ collectionView: HorizontalCollectionView, viewForIndex index: Int) -> HorizontalCollectionItemView {
+                let bundle = Bundle(for: SampleView.self)
+        let view = bundle.loadNibNamed("SampleView", owner: self, options: nil)?.first as! SampleView
         view.configure(with: backgroundColors[index])
 
         return view
-    }
-
-    func onSelect(index: Int) {
-        print("A view with index \(index) was selected.")
     }
 }

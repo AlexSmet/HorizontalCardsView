@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,10 @@
 		FA0F4559245AAA3A004B9055 /* ViewsSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F4554245AAA39004B9055 /* ViewsSource.swift */; };
 		FA0F455E245AAEEB004B9055 /* SampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F455D245AAEEB004B9055 /* SampleView.swift */; };
 		FA0F4560245AAEF9004B9055 /* SampleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0F455F245AAEF9004B9055 /* SampleView.xib */; };
+		FA41898B2462DF090086FC2B /* HorizontalCollectionItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4189862462DF090086FC2B /* HorizontalCollectionItemView.swift */; };
+		FA41898D2462DF090086FC2B /* HorizontalCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA4189882462DF090086FC2B /* HorizontalCollectionCell.xib */; };
+		FA41898E2462DF090086FC2B /* HorizontalCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4189892462DF090086FC2B /* HorizontalCollectionCell.swift */; };
+		FA41898F2462DF090086FC2B /* HorizontalCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA41898A2462DF090086FC2B /* HorizontalCollectionView.swift */; };
 		FAFFAB4524458F88002A64BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFFAB4424458F88002A64BA /* AppDelegate.swift */; };
 		FAFFAB4924458F88002A64BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFFAB4824458F88002A64BA /* ViewController.swift */; };
 		FAFFAB4C24458F88002A64BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFFAB4A24458F88002A64BA /* Main.storyboard */; };
@@ -27,6 +31,10 @@
 		FA0F4554245AAA39004B9055 /* ViewsSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewsSource.swift; sourceTree = "<group>"; };
 		FA0F455D245AAEEB004B9055 /* SampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleView.swift; sourceTree = "<group>"; };
 		FA0F455F245AAEF9004B9055 /* SampleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleView.xib; sourceTree = "<group>"; };
+		FA4189862462DF090086FC2B /* HorizontalCollectionItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalCollectionItemView.swift; sourceTree = "<group>"; };
+		FA4189882462DF090086FC2B /* HorizontalCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HorizontalCollectionCell.xib; sourceTree = "<group>"; };
+		FA4189892462DF090086FC2B /* HorizontalCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalCollectionCell.swift; sourceTree = "<group>"; };
+		FA41898A2462DF090086FC2B /* HorizontalCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalCollectionView.swift; sourceTree = "<group>"; };
 		FAFFAB4124458F88002A64BA /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAFFAB4424458F88002A64BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAFFAB4824458F88002A64BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,9 +75,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FA4189852462DF090086FC2B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FA4189862462DF090086FC2B /* HorizontalCollectionItemView.swift */,
+				FA4189882462DF090086FC2B /* HorizontalCollectionCell.xib */,
+				FA4189892462DF090086FC2B /* HorizontalCollectionCell.swift */,
+				FA41898A2462DF090086FC2B /* HorizontalCollectionView.swift */,
+			);
+			name = Classes;
+			path = ../HorizontalCollectionView/Classes;
+			sourceTree = "<group>";
+		};
 		FAFFAB3824458F88002A64BA = {
 			isa = PBXGroup;
 			children = (
+				FA4189852462DF090086FC2B /* Classes */,
 				FAFFAB4324458F88002A64BA /* Example */,
 				FAFFAB4224458F88002A64BA /* Products */,
 				A98E50C022241376B46BF012 /* Pods */,
@@ -112,7 +133,6 @@
 				FAFFAB3D24458F88002A64BA /* Sources */,
 				FAFFAB3E24458F88002A64BA /* Frameworks */,
 				FAFFAB3F24458F88002A64BA /* Resources */,
-				10E87BFC7D53475C64F02FE0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -164,6 +184,7 @@
 				FAFFAB5124458F8B002A64BA /* LaunchScreen.storyboard in Resources */,
 				FA0F4560245AAEF9004B9055 /* SampleView.xib in Resources */,
 				FAFFAB4E24458F8B002A64BA /* Assets.xcassets in Resources */,
+				FA41898D2462DF090086FC2B /* HorizontalCollectionCell.xib in Resources */,
 				FAFFAB4C24458F88002A64BA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -171,23 +192,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		10E87BFC7D53475C64F02FE0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		8D9D1399D822D2D048506ECD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -219,7 +223,10 @@
 			files = (
 				FAFFAB4924458F88002A64BA /* ViewController.swift in Sources */,
 				FAFFAB4524458F88002A64BA /* AppDelegate.swift in Sources */,
+				FA41898F2462DF090086FC2B /* HorizontalCollectionView.swift in Sources */,
+				FA41898E2462DF090086FC2B /* HorizontalCollectionCell.swift in Sources */,
 				FA0F455E245AAEEB004B9055 /* SampleView.swift in Sources */,
+				FA41898B2462DF090086FC2B /* HorizontalCollectionItemView.swift in Sources */,
 				FA0F4559245AAA3A004B9055 /* ViewsSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,15 +9,21 @@
 import UIKit
 import HorizontalCollectionView
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, HorizontalCollectionViewDelegate {
+
     @IBOutlet weak var collectionView: HorizontalCollectionView!
 
     let viewsSource = ViewsSource()
     
     override func viewDidLoad() {
         collectionView.viewsSource = viewsSource
+        collectionView.delegate = self
         collectionView.cellSpacing = 15
         collectionView.inset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+    }
+
+    func horizontalCollectionView(_ collectionView: HorizontalCollectionView, didSelectItemAtIndex index: Int) {
+        print("A view with index \(index) was selected.")
     }
 }
 

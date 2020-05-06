@@ -8,6 +8,15 @@
 
 import UIKit
 
+public protocol HorizontalCollectionViewsSource {
+    func horizontalCollectionViewNumberOfItems(_ collectionView: HorizontalCollectionView) -> Int
+    func horizontalCollectionView(_ collectionView: HorizontalCollectionView, viewForIndex index: Int) -> HorizontalCollectionItemView
+}
+
+public protocol HorizontalCollectionViewDelegate {
+    func horizontalCollectionView(_ collectionView: HorizontalCollectionView, didSelectItemAtIndex index: Int)
+}
+
 public class HorizontalCollectionView: UIView, UICollectionViewDelegate, UICollectionViewDataSource {
 
     private let flowLayout = UICollectionViewFlowLayout()
@@ -17,7 +26,14 @@ public class HorizontalCollectionView: UIView, UICollectionViewDelegate, UIColle
     private var indexOfCellBeforeDragging = 0
 
     /// Источник view для отображния в коллекции
-    public var viewsSource: PHorizontalCollectionViewsSource!
+    public var viewsSource: HorizontalCollectionViewsSource!
+
+    /// Делегат
+    public var delegate: HorizontalCollectionViewDelegate?
+
+    private var viewsCount: Int {
+        return viewsSource.horizontalCollectionViewNumberOfItems(self)
+    }
 
     private var cellSize: CGSize {
         get { return flowLayout.itemSize }
@@ -80,25 +96,25 @@ public class HorizontalCollectionView: UIView, UICollectionViewDelegate, UIColle
     private func setCellSize() {
         let singleCellWidth = bounds.width - (inset.left + inset.right)
         let multiCellsWidth = bounds.width * 12 / 15
-        let cellWidth = viewsSource.count > 1 ? multiCellsWidth : singleCellWidth
+        let cellWidth = viewsCount > 1 ? multiCellsWidth : singleCellWidth
         let cellHeght = collectionView.bounds.height - inset.top - inset.bottom
         cellSize = CGSize(width: cellWidth, height: cellHeght)
     }
 
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return viewsSource.count
+        return viewsCount
     }
 
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! HorizontalCollectionCell
-        let view = viewsSource.getView(index: indexPath.row)
+        let view = viewsSource.horizontalCollectionView(self, viewForIndex: indexPath.row)
         cell.embedView(view)
 
         return cell
     }
 
     public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        viewsSource.onSelect(index: indexPath.row)
+        delegate?.horizontalCollectionView(self, didSelectItemAtIndex: indexPath.row)
     }
 }
 
@@ -112,7 +128,7 @@ extension HorizontalCollectionView {
     public func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
         targetContentOffset.pointee = scrollView.contentOffset
         let cellIndexOffset = velocity.x == 0 ? 0 : (velocity.x > 0 ? 1: -1)
-        let indexOfDestinationCell = max(0, min(viewsSource.count - 1, indexOfCellBeforeDragging + cellIndexOffset))
+        let indexOfDestinationCell = max(0, min(viewsCount - 1, indexOfCellBeforeDragging + cellIndexOffset))
         let indexPath = IndexPath(row: indexOfDestinationCell, section: 0)
         collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
     }

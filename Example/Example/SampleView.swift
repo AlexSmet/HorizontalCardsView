@@ -9,13 +9,9 @@
 import UIKit
 import HorizontalCollectionView
 
-class SampleView: UIView, PHorizontalCollectionEmbededView {
+class SampleView: HorizontalCollectionItemView {
 
     func configure(with anyColor: Any) {
         self.backgroundColor = (anyColor as! UIColor)
-    }
-
-    func prepareForReuse() {
-        // Nothing to do
     }
 }
