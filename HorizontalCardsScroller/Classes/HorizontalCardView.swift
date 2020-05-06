@@ -11,5 +11,5 @@ import UIKit
 /// Класс от которого должны наследоваться все view используемые в коллекции
 public class HorizontalCardView: UIView {
     /// Преопределите этот метод, если требуется выполнить специальные дествия перед повторным использованием
-    func prepareForReuse() { }
+    public func prepareForReuse() { }
 }
