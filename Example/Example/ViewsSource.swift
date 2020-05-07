@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import HorizontalCardsScroller
+import HorizontalCardsView
 
 class ViewsSource: NSObject, HorizontalCardsViewSource {
 

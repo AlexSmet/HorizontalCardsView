@@ -5,6 +5,5 @@ target 'Example' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # pod 'HorizontalCardsScroller', :git => 'https://github.com/AlexSmet/HorizontalCardsScroller.git'
-
+  pod 'HorizontalCardsView', :git => 'https://github.com/AlexSmet/HorizontalCardsView.git'
 end
