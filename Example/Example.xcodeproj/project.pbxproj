@@ -88,12 +88,12 @@
 		FAFFAB4324458F88002A64BA /* Example */ = {
 			isa = PBXGroup;
 			children = (
-				FA0F4554245AAA39004B9055 /* ViewsSource.swift */,
 				FA0F455D245AAEEB004B9055 /* SampleView.swift */,
 				FA0F455F245AAEF9004B9055 /* SampleView.xib */,
-				FAFFAB4424458F88002A64BA /* AppDelegate.swift */,
+				FA0F4554245AAA39004B9055 /* ViewsSource.swift */,
 				FAFFAB4824458F88002A64BA /* ViewController.swift */,
 				FAFFAB4A24458F88002A64BA /* Main.storyboard */,
+				FAFFAB4424458F88002A64BA /* AppDelegate.swift */,
 				FAFFAB4D24458F8B002A64BA /* Assets.xcassets */,
 				FAFFAB4F24458F8B002A64BA /* LaunchScreen.storyboard */,
 				FAFFAB5224458F8B002A64BA /* Info.plist */,
@@ -112,7 +112,6 @@
 				FAFFAB3D24458F88002A64BA /* Sources */,
 				FAFFAB3E24458F88002A64BA /* Frameworks */,
 				FAFFAB3F24458F88002A64BA /* Resources */,
-				E7DDB5C4712124022F872992 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -191,23 +190,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E7DDB5C4712124022F872992 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

@@ -1,6 +1,6 @@
 //
 //  HorizontalCardView.swift
-//  HorizontalCollectionView
+//  HorizontalCardsView
 //
 //  Created by Aleksandr Smetannikov on 30/04/2020.
 //  Copyright © 2020 Alex Smetannikov. All rights reserved.
