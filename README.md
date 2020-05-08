@@ -13,7 +13,9 @@ Using
 ---
 
 1. Add `UIView` to storyboard and set `Custom Class` as `HorizontalCardsView`.
+  
 ![Storyboard](https://user-images.githubusercontent.com/25868364/81420128-24df8780-9158-11ea-9c88-860a21c16d2e.png)
+  
 2. Set you `ViewController` to conform `HorizontalCardsDataSource` and `HorizontalCardsDelegate`protocols.
 3. Setup params `viewsSource` and `delegate` in `viewDidLoad()` for your `HorizontalCardsView` instance.
 ```swift
