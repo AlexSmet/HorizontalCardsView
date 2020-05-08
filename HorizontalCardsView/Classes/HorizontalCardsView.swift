@@ -17,7 +17,7 @@ public protocol HorizontalCardsDataSource {
 }
 
 /// Делегат для обработки событий
-public protocol HorizontalCardsViewDelegate {
+public protocol HorizontalCardsDelegate {
     /// Выбор элемента в списке
     func horizontalCardsView(_: HorizontalCardsView, didSelectItemAtIndex index: Int)
 }
@@ -36,7 +36,7 @@ public class HorizontalCardsView: UIView, UICollectionViewDelegate, UICollection
     public var dataSource: HorizontalCardsDataSource!
 
     /// Делегат для обработки событий
-    public var delegate: HorizontalCardsViewDelegate?
+    public var delegate: HorizontalCardsDelegate?
 
     private var viewsCount: Int {
         return dataSource.horizontalCardsViewNumberOfItems(self)

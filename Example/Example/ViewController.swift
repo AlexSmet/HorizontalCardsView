@@ -9,7 +9,7 @@
 import UIKit
 import HorizontalCardsView
 
-class ViewController: UIViewController, HorizontalCardsViewDelegate {
+class ViewController: UIViewController, HorizontalCardsDelegate {
 
     @IBOutlet weak var horizontalCardsView: HorizontalCardsView!
 
