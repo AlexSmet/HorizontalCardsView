@@ -19,14 +19,14 @@ Using
 2. Set you `ViewController` to conform `HorizontalCardsDataSource` and `HorizontalCardsDelegate`protocols.
 3. Setup params `viewsSource` and `delegate` in `viewDidLoad()` for your `HorizontalCardsView` instance.
 ```swift
-class ViewController: UIViewController, HorizontalCardsViewSource, HorizontalCardsViewDelegate {
+class ViewController: UIViewController, HorizontalCardsDataSource, HorizontalCardsDelegate {
 
     @IBOutlet weak var horizontalCardsView: HorizontalCardsView!
 
     // ...
     
     override func viewDidLoad() {
-        horizontalCardsView.viewsSource = self
+        horizontalCardsView.dataSource = self
         horizontalCardsView.delegate = self
         horizontalCardsView.cellSpacing = 15
         horizontalCardsView.inset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
