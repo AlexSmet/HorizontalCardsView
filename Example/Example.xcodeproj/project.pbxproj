@@ -11,10 +11,6 @@
 		FA0F4559245AAA3A004B9055 /* ViewsSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F4554245AAA39004B9055 /* ViewsSource.swift */; };
 		FA0F455E245AAEEB004B9055 /* SampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0F455D245AAEEB004B9055 /* SampleView.swift */; };
 		FA0F4560245AAEF9004B9055 /* SampleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0F455F245AAEF9004B9055 /* SampleView.xib */; };
-		FAC97C8C2465A0B300F9E67E /* HorizontalCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC97C882465A0B300F9E67E /* HorizontalCardView.swift */; };
-		FAC97C8D2465A0B300F9E67E /* HorizontalCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC97C892465A0B300F9E67E /* HorizontalCardCell.swift */; };
-		FAC97C8E2465A0B300F9E67E /* HorizontalCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC97C8A2465A0B300F9E67E /* HorizontalCardCell.xib */; };
-		FAC97C8F2465A0B300F9E67E /* HorizontalCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC97C8B2465A0B300F9E67E /* HorizontalCardsView.swift */; };
 		FAFFAB4524458F88002A64BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFFAB4424458F88002A64BA /* AppDelegate.swift */; };
 		FAFFAB4924458F88002A64BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFFAB4824458F88002A64BA /* ViewController.swift */; };
 		FAFFAB4C24458F88002A64BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFFAB4A24458F88002A64BA /* Main.storyboard */; };
@@ -31,10 +27,6 @@
 		FA0F4554245AAA39004B9055 /* ViewsSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewsSource.swift; sourceTree = "<group>"; };
 		FA0F455D245AAEEB004B9055 /* SampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleView.swift; sourceTree = "<group>"; };
 		FA0F455F245AAEF9004B9055 /* SampleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleView.xib; sourceTree = "<group>"; };
-		FAC97C882465A0B300F9E67E /* HorizontalCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalCardView.swift; sourceTree = "<group>"; };
-		FAC97C892465A0B300F9E67E /* HorizontalCardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalCardCell.swift; sourceTree = "<group>"; };
-		FAC97C8A2465A0B300F9E67E /* HorizontalCardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HorizontalCardCell.xib; sourceTree = "<group>"; };
-		FAC97C8B2465A0B300F9E67E /* HorizontalCardsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalCardsView.swift; sourceTree = "<group>"; };
 		FAFFAB4124458F88002A64BA /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAFFAB4424458F88002A64BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAFFAB4824458F88002A64BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,30 +67,9 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FAC97C862465A0B300F9E67E /* HorizontalCardsView */ = {
-			isa = PBXGroup;
-			children = (
-				FAC97C872465A0B300F9E67E /* Classes */,
-			);
-			name = HorizontalCardsView;
-			path = ../HorizontalCardsView;
-			sourceTree = "<group>";
-		};
-		FAC97C872465A0B300F9E67E /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				FAC97C882465A0B300F9E67E /* HorizontalCardView.swift */,
-				FAC97C892465A0B300F9E67E /* HorizontalCardCell.swift */,
-				FAC97C8A2465A0B300F9E67E /* HorizontalCardCell.xib */,
-				FAC97C8B2465A0B300F9E67E /* HorizontalCardsView.swift */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		FAFFAB3824458F88002A64BA = {
 			isa = PBXGroup;
 			children = (
-				FAC97C862465A0B300F9E67E /* HorizontalCardsView */,
 				FAFFAB4324458F88002A64BA /* Example */,
 				FAFFAB4224458F88002A64BA /* Products */,
 				A98E50C022241376B46BF012 /* Pods */,
@@ -194,7 +165,6 @@
 				FA0F4560245AAEF9004B9055 /* SampleView.xib in Resources */,
 				FAFFAB4E24458F8B002A64BA /* Assets.xcassets in Resources */,
 				FAFFAB4C24458F88002A64BA /* Main.storyboard in Resources */,
-				FAC97C8E2465A0B300F9E67E /* HorizontalCardCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,11 +217,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAC97C8F2465A0B300F9E67E /* HorizontalCardsView.swift in Sources */,
 				FAFFAB4924458F88002A64BA /* ViewController.swift in Sources */,
-				FAC97C8C2465A0B300F9E67E /* HorizontalCardView.swift in Sources */,
 				FAFFAB4524458F88002A64BA /* AppDelegate.swift in Sources */,
-				FAC97C8D2465A0B300F9E67E /* HorizontalCardCell.swift in Sources */,
 				FA0F455E245AAEEB004B9055 /* SampleView.swift in Sources */,
 				FA0F4559245AAA3A004B9055 /* ViewsSource.swift in Sources */,
 			);
