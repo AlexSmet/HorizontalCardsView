@@ -8,15 +8,22 @@
 
 import UIKit
 
+/// Источник view для отображения
 public protocol HorizontalCardsViewSource {
+    /// Возвращает число элементов
     func horizontalCardsViewNumberOfItems(_: HorizontalCardsView) -> Int
+    /// Возвращает view для каждого индекса
     func horizontalCardsView(_: HorizontalCardsView, viewForIndex index: Int) -> HorizontalCardView
 }
 
+/// Делегат для обработки событий
 public protocol HorizontalCardsViewDelegate {
+    /// Выбор элемента в списке
     func horizontalCardsView(_: HorizontalCardsView, didSelectItemAtIndex index: Int)
 }
 
+/// Визуальный компонент реализующий список карточек (view) с горизонтальной прокруткой
+/// Для правильного отбражения должен быть определен источник viewsSource
 public class HorizontalCardsView: UIView, UICollectionViewDelegate, UICollectionViewDataSource {
 
     private let flowLayout = UICollectionViewFlowLayout()
@@ -25,10 +32,10 @@ public class HorizontalCardsView: UIView, UICollectionViewDelegate, UICollection
 
     private var indexOfCellBeforeDragging = 0
 
-    /// Источник view для отображния в коллекции
+    /// Источник карточек (view) для отображния в коллекции
     public var viewsSource: HorizontalCardsViewSource!
 
-    /// Делегат
+    /// Делегат для обработки событий
     public var delegate: HorizontalCardsViewDelegate?
 
     private var viewsCount: Int {
