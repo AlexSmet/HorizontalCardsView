@@ -8,8 +8,24 @@ Visual component realizes a horizontally scrollable list of cards.
 
 ![Scrolling example](https://user-images.githubusercontent.com/25868364/81389144-078fc680-9122-11ea-9857-e736c0483db2.gif)
 
+Installation
+---
 
-Using
+### CocoaPods
+[CocoaPods](https://cocoapods.org) is the preffered way to add HorizontalCardsView to your project.
+
+Just add following line to your Podfile
+```
+pod 'HorizontalCardsView'
+```
+Then run a `pod install` inside your terminal.
+
+After that you can include HorizontalCardsView wherever you need it with 
+```
+import HorizontalCardsView
+```
+
+Usage
 ---
 
 1. Add `UIView` to storyboard and set `Custom Class` as `HorizontalCardsView`.
