@@ -11,15 +11,15 @@ import HorizontalCardsView
 
 class ViewController: UIViewController, HorizontalCardsViewDelegate {
 
-    @IBOutlet weak var collectionView: HorizontalCardsView!
+    @IBOutlet weak var horizontalCardsView: HorizontalCardsView!
 
     let viewsSource = ViewsSource()
     
     override func viewDidLoad() {
-        collectionView.viewsSource = viewsSource
-        collectionView.delegate = self
-        collectionView.cellSpacing = 15
-        collectionView.inset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+        horizontalCardsView.viewsSource = viewsSource
+        horizontalCardsView.delegate = self
+        horizontalCardsView.cellSpacing = 10
+        horizontalCardsView.inset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
     }
 
     func horizontalCardsView(_: HorizontalCardsView, didSelectItemAtIndex index: Int) {

@@ -10,12 +10,28 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SampleView" customModule="TableViewWIthHScrollExample" customModuleProvider="target">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SampleView" customModule="Example" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="350" height="135"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cO-uo-bPa">
+                    <rect key="frame" x="20" y="50" width="325" height="35"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="29"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.61176470588235299" green="0.53725490196078429" blue="0.72156862745098038" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="5cO-uo-bPa" secondAttribute="trailing" constant="5" id="7sM-H6-B8x"/>
+                <constraint firstItem="5cO-uo-bPa" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="F78-Of-D3r"/>
+                <constraint firstItem="5cO-uo-bPa" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="THm-nx-Axw"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="label" destination="5cO-uo-bPa" id="ThL-nP-INW"/>
+            </connections>
             <point key="canvasLocation" x="134.40000000000001" y="-244.22788605697153"/>
         </view>
     </objects>

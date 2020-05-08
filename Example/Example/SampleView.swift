@@ -11,7 +11,10 @@ import HorizontalCardsView
 
 class SampleView: HorizontalCardView {
 
-    func configure(with anyColor: Any) {
+    @IBOutlet weak var label: UILabel!
+
+    func configure(with anyColor: Any, text: String) {
         self.backgroundColor = (anyColor as! UIColor)
+        self.label.text = text
     }
 }
