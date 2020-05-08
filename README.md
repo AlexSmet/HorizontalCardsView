@@ -8,6 +8,7 @@ Visual component realizes a horizontally scrollable list of cards.
 
 ![Scrolling example](https://user-images.githubusercontent.com/25868364/81389144-078fc680-9122-11ea-9857-e736c0483db2.gif)
 
+
 Using
 ---
 
