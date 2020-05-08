@@ -9,7 +9,7 @@
 import UIKit
 
 /// Источник view для отображения
-public protocol HorizontalCardsViewSource {
+public protocol HorizontalCardsDataSource {
     /// Возвращает число элементов
     func horizontalCardsViewNumberOfItems(_: HorizontalCardsView) -> Int
     /// Возвращает view для каждого индекса
@@ -33,13 +33,13 @@ public class HorizontalCardsView: UIView, UICollectionViewDelegate, UICollection
     private var indexOfCellBeforeDragging = 0
 
     /// Источник карточек (view) для отображния в коллекции
-    public var viewsSource: HorizontalCardsViewSource!
+    public var dataSource: HorizontalCardsDataSource!
 
     /// Делегат для обработки событий
     public var delegate: HorizontalCardsViewDelegate?
 
     private var viewsCount: Int {
-        return viewsSource.horizontalCardsViewNumberOfItems(self)
+        return dataSource.horizontalCardsViewNumberOfItems(self)
     }
 
     private var cellSize: CGSize {
@@ -114,7 +114,7 @@ public class HorizontalCardsView: UIView, UICollectionViewDelegate, UICollection
 
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! HorizontalCardCell
-        let view = viewsSource.horizontalCardsView(self, viewForIndex: indexPath.row)
+        let view = dataSource.horizontalCardsView(self, viewForIndex: indexPath.row)
         cell.embedView(view)
 
         return cell

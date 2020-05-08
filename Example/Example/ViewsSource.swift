@@ -9,7 +9,7 @@
 import UIKit
 import HorizontalCardsView
 
-class ViewsSource: NSObject, HorizontalCardsViewSource {
+class ViewsSource: NSObject, HorizontalCardsDataSource {
 
     let backgroundColors: [UIColor] = [
         UIColor(red: 156/255, green: 137/255, blue: 184/255, alpha: 1),
