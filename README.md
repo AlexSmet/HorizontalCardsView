@@ -34,6 +34,7 @@ Usage
   
 2. Set you `ViewController` to conform `HorizontalCardsDataSource` and `HorizontalCardsDelegate`protocols.
 3. Setup params `viewsSource` and `delegate` in `viewDidLoad()` for your `HorizontalCardsView` instance.
+Also, you should define params `cardSpasing` and `insets`.  Height of cards is calculated as the height of `HorizontalCardsView` minus top and bottom insets. WIdth of cards is calculated as the width of `HorizontalCardsView` with `cardWidthFactor` or width of `HorizontalCardsView` minus left and right insets if the component contains a single card.
 ```swift
 class ViewController: UIViewController, HorizontalCardsDataSource, HorizontalCardsDelegate {
 
