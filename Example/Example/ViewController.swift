@@ -18,8 +18,8 @@ class ViewController: UIViewController, HorizontalCardsDelegate {
     override func viewDidLoad() {
         horizontalCardsView.dataSource = viewsSource
         horizontalCardsView.delegate = self
-        horizontalCardsView.cellSpacing = 10
-        horizontalCardsView.inset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+        horizontalCardsView.cardSpacing = 10
+        horizontalCardsView.insets = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
     }
 
     func horizontalCardsView(_: HorizontalCardsView, didSelectItemAtIndex index: Int) {

@@ -42,19 +42,21 @@ public class HorizontalCardsView: UIView, UICollectionViewDelegate, UICollection
         return dataSource.horizontalCardsViewNumberOfItems(self)
     }
 
-    private var cellSize: CGSize {
+    private var cardSize: CGSize {
         get { return flowLayout.itemSize }
         set { flowLayout.itemSize = newValue }
     }
 
-    /// Расстояние между ячейками
-    public var cellSpacing: CGFloat {
+    public var cardWidthFactor: CGFloat = 0.8
+
+    /// Расстояние между карточками
+    public var cardSpacing: CGFloat {
         get { return flowLayout.minimumLineSpacing }
         set { flowLayout.minimumLineSpacing = newValue }
     }
 
     /// Отступы от границ
-    public var inset: UIEdgeInsets {
+    public var insets: UIEdgeInsets {
         get { return flowLayout.sectionInset }
         set { flowLayout.sectionInset = newValue }
     }
@@ -91,26 +93,26 @@ public class HorizontalCardsView: UIView, UICollectionViewDelegate, UICollection
 
     override public func layoutSubviews() {
         super.layoutSubviews()
-        setCellSize()
+        setCardSize()
     }
 
     ///  Обновление данных в коллекции
     public func reloadData() {
-        setCellSize()
+        setCardSize()
         collectionView.reloadData()
     }
 
-    // Вычисление размеров ячеек
+    // Вычисление размеров карточки
     // Ширина:
-    //     - единственная ячейка занимает всю ширину компонента минус отстпы
-    //     - при наличии нескольких ячеек ширина вычисляется как 12/15 от ширины компонента
-    // Высота вычисляется как высота компонента компонента минус отступы
-    private func setCellSize() {
-        let singleCellWidth = bounds.width - (inset.left + inset.right)
-        let multiCellsWidth = bounds.width * 12 / 15
-        let cellWidth = viewsCount > 1 ? multiCellsWidth : singleCellWidth
-        let cellHeght = collectionView.bounds.height - inset.top - inset.bottom
-        cellSize = CGSize(width: cellWidth, height: cellHeght)
+    //     - единственная карточка занимает всю ширину компонента минус отстпы
+    //     - при наличии нескольких карточек ширина вычисляется ширины компонента умноженная на cardWidthFactor
+    // Высота вычисляется как высота компонента минус отступы
+    private func setCardSize() {
+        let singleCardWidth = bounds.width - insets.left - insets.right
+        let multiCardsWidth = bounds.width * cardWidthFactor
+        let cardWidth = viewsCount > 1 ? multiCardsWidth : singleCardWidth
+        let cardHeght = collectionView.bounds.height - insets.top - insets.bottom
+        cardSize = CGSize(width: cardWidth, height: cardHeght)
     }
 
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
