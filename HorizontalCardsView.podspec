@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'HorizontalCardsView'
-    s.version          = '0.1.2'
+    s.version          = '0.2.0'
     s.summary          = 'Collection view with horizontal srolling'
     s.swift_version    = '4.0'
 
