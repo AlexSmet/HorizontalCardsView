@@ -100,6 +100,11 @@ public class HorizontalCardsView: UIView, UICollectionViewDelegate, UICollection
         collectionView.reloadData()
     }
 
+    // Вычисление размеров ячеек
+    // Ширина:
+    //     - единственная ячейка занимает всю ширину компонента минус отстпы
+    //     - при наличии нескольких ячеек ширина вычисляется как 12/15 от ширины компонента
+    // Высота вычисляется как высота компонента компонента минус отступы
     private func setCellSize() {
         let singleCellWidth = bounds.width - (inset.left + inset.right)
         let multiCellsWidth = bounds.width * 12 / 15
